@@ -77,7 +77,6 @@ export class PumlRenderer{
       createQryDir :function(inpDir,outDir,fmt='svg'){
 
         return  'java -jar '+H.jarPth+' ' +
-                '-charset "utf8" ' +
                 H._.setFmt(fmt) +' '+
                 '-o "'+outDir+'" "'+path.resolve(inpDir+'/**.puml')+'"';
 
@@ -86,7 +85,6 @@ export class PumlRenderer{
       createQryFile:function(inp,out,fmt='svg'){
 
         return  'java -jar '+H.jarPth+' ' +
-                '-charset "utf8" ' +
                 H._.setFmt(fmt) +' '+
                 '-o "'+out+'" "'+inp+'"';
 
@@ -95,7 +93,6 @@ export class PumlRenderer{
       createQryStr:function(inpStr,outFile,fmt='svg'){
 
         return  'java -jar '+H.jarPth+' ' +
-                '-charset "utf8" ' +
                 H._.setFmt(fmt) +' '+
                 '-pipe > "'+outFile+'"';
 
@@ -104,7 +101,6 @@ export class PumlRenderer{
       createQryStm:function(fmt='svg'){
 
         return  'java -jar '+H.jarPth+' ' +
-                '-charset "utf8" ' +
                 H._.setFmt(fmt) +' '+
                 '-pipe';
 
