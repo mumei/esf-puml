@@ -24,7 +24,7 @@ export class PumlRenderer{
     this.supportedFormats={
       svg:'-tsvg',
       eps:'-teps',
-      png:''
+      png:'-tpng'
     };
 
     /**
